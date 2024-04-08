@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="order-form-main stepper column is-medium-12 is-8 has-next" data-stepper="order-form">
+    <h2>Pyydä tarjousta</h2>
+
+<header class=" stepper-header">
+                <div class="stepper-header-item is-active" data-stepper-header-item="">
+  <div class="stepper-header-item-number">1</div>
+  <div class="stepper-header-item-title">Yhteystiedot</div>
+</div>
+        <div class="stepper-header-item " data-stepper-header-item="">
+  <div class="stepper-header-item-number">2</div>
+  <div class="stepper-header-item-title">Osoitteet</div>
+</div>
+        <div class="stepper-header-item " data-stepper-header-item="">
+  <div class="stepper-header-item-number">3</div>
+  <div class="stepper-header-item-title">Lisätiedot</div>
+</div>
+        <div class="stepper-header-item " data-stepper-header-item="">
+  <div class="stepper-header-item-number">4</div>
+  <div class="stepper-header-item-title">Valmis</div>
+</div>
+    </header>
+
+<div class="stepper-body">
+<form class="stepper-form form">
+<div class="stepper-step is-active" data-stepper-step="">
+  <div class="field">
+    <label for="order-name">Nimi</label>
+    <input name="name" id="order-name" type="text" required="">
+  </div>
+  <div class="field">
+    <label for="order-phone">Puhelin</label>
+    <input name="phone" id="order-phone" type="text" required="">
+  </div>
+  <div class="field">
+    <label for="order-email">Sähköposti</label>
+    <input name="email" id="order-email" type="text" required="">
+  </div>
+</div>
+
+<div class="stepper-step" data-stepper-step="">
+  <h3>Mistä</h3>
+  <div class="fields">
+    <div class="field">
+      <label for="order-from-address">Katuosoite</label>
+      <input name="from_address" id="order-from-address" type="text" required="">
+    </div>
+
+    <div class="field is-small">
+      <label for="order-from-postal-code">Postinumero</label>
+      <input name="from_postal_code" id="order-from-postal-code" type="text" required="">
+    </div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-from-city">Kaupunki</label>
+      <input name="from_city" id="order-from-city" type="text" required="">
+    </div>
+    <div class="field">
+      <label for="order-from-residents">Asukkaat</label>
+      <input name="from_residents" id="order-from-residents" type="number" required="">
+    </div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-from-house-type">Talotyyppi</label>
+      <select name="from_house_type" id="order-from-house-type" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="Kerrostalo">Kerrostalo</option>
+        <option value="Rivitalo">Rivitalo</option>
+        <option value="Omakotitalo">Omakotitalo</option>
+        <option value="Toimisto">Toimisto</option>
+        <option value="Tavarot varastossa">Tavarat varastossa</option>
+        <option value="Muu">Muu</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="order-from-elevator">Hissi</label>
+      <select name="from_elevator" id="order-from-elevator" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="yes">Kyllä</option>
+        <option value="no">Ei</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-from-size">Pinta-ala (m²)</label>
+      <input name="from_size" id="order-from-size" type="number" required="">
+    </div>
+    <div class="field">
+      <label for="order-from-floor">Kerros</label>
+      <select name="from_floor" id="order-from-floor" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="maantasa">Maantasa</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                        </select>
+    </div>
+  </div>
+
+  <h3>Mihin</h3>
+  <div class="fields">
+    <div class="field">
+      <label for="order-to-address">Katuosoite</label>
+      <input name="to_address" id="order-to-address" type="text" required="">
+    </div>
+
+    <div class="field is-small">
+      <label for="order-to-postal-code">Postinumero</label>
+      <input name="to_postal_code" id="order-to-postal-code" type="text" required="">
+    </div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-to-city">Kaupunki</label>
+      <input name="to_city" id="order-to-city" type="text" required="">
+    </div>
+    <div class="field">
+      <label for="order-to-residents">Asukkaat</label>
+      <input name="to_residents" id="order-to-residents" type="number" required="">
+    </div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-to-house-type">Talotyyppi</label>
+      <select name="to_house_type" id="order-to-house-type" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="Kerrostalo">Kerrostalo</option>
+        <option value="Rivitalo">Rivitalo</option>
+        <option value="Omakotitalo">Omakotitalo</option>
+        <option value="Toimisto">Toimisto</option>
+        <option value="Tavarot varastossa">Tavarat varastossa</option>
+        <option value="Muu">Muu</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="order-to-elevator">Hissi</label>
+      <select name="to_elevator" id="order-to-elevator" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="yes">Kyllä</option>
+        <option value="no">Ei</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-to-size">Pinta-ala (m²)</label>
+      <input name="to_size" id="order-to-size" type="number" required="">
+    </div>
+    <div class="field">
+      <label for="order-to-floor">Kerros</label>
+      <select name="to_floor" id="order-to-floor" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="maantasa">Maantasa</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                        </select>
+    </div>
+  </div>
+</div>
+
+<div class="stepper-step" data-stepper-step="">
+  <div class="fields">
+    <div class="field">
+      <label for="order-date">Toivottu muuttoajankohta</label>
+      <input name="date" id="order-date" type="date" required="">
+    </div>
+    <div class="field" style="margin-top: 1rem; font-size: 0.875rem">Mikäli useampi päivä sopii, kirjoita ne lisätietoihin.</div>
+  </div>
+
+  <div class="fields">
+    <div class="field">
+      <label for="order-cover">Käytävien/hissien suojaus</label>
+      <select name="cover" id="order-cover" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="yes">Kyllä</option>
+        <option value="no">Ei</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="order-animals">Eläintalous</label>
+      <select name="animals" id="order-animals" required="">
+        <option disabled="" selected="" value="">Valitse</option>
+        <option value="yes">Kyllä</option>
+        <option value="no">Ei</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="field checkboxes">
+    <p class="label">Lisäpalvelut</p>
+                    <div class="checkbox">
+        <input name="extra_Asiakkaalla on omaa kantoapua" id="checkbox-1" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-1">
+          Asiakkaalla on omaa kantoapua
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Muut pakkausmateriaalit (esim. pakkauspaperi, kuplamuovi)" id="checkbox-3" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-3">
+          Muut pakkausmateriaalit (esim. pakkauspaperi, kuplamuovi)
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Pakkaus; Aukipakkaus" id="checkbox-4" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-4">
+          Pakkaus; Aukipakkaus
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Piano" id="checkbox-5" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-5">
+          Piano
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Flyygeli" id="checkbox-6" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-6">
+          Flyygeli
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Kassakaappi" id="checkbox-7" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-7">
+          Kassakaappi
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Muu painava esine (kirjoita lisätietoihin)" id="checkbox-8" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-8">
+          Muu painava esine (kirjoita lisätietoihin)
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Varastointipalvelu" id="checkbox-9" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-9">
+          Varastointipalvelu
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Kalusteiden hävitys- tai kierrätyspalvelu" id="checkbox-10" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-10">
+          Kalusteiden hävitys- tai kierrätyspalvelu
+        </label>
+      </div>
+                    <div class="checkbox">
+        <input name="extra_Muu, mitä?" id="checkbox-11" type="checkbox" wfd-value="b24=">
+        <label class="checkbox-label" for="checkbox-11">
+          Muu, mitä?
+        </label>
+      </div>
+                </div>
+
+  <div class="field">
+    <label for="order-notes">Lisätiedot</label>
+    <textarea name="message" id="order-notes" rows="6"></textarea>
+  </div>
+
+  <div class="field checkboxes">
+    <div class="checkbox">
+      <input name="consent" id="order-consent" type="checkbox" required="" wfd-value="b24=">
+      <label class="checkbox-label" for="order-consent">
+        Hyväksyn, että tietoni käsitellään tietosuojaselosteessa kuvatulla tavalla
+        (<a href="https://www." target="_blank" rel="noopener noreferrer">Lisätiedot</a>)
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="stepper-step" data-stepper-step="">
+  <div class="stepper-complete">
+    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M352 248v-16c0-4.42-3.58-8-8-8H168c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h176c4.42 0 8-3.58 8-8zm-184-56h176c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8H168c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8zm326.59-27.48c-1.98-1.63-22.19-17.91-46.59-37.53V96c0-17.67-14.33-32-32-32h-46.47c-4.13-3.31-7.71-6.16-10.2-8.14C337.23 38.19 299.44 0 256 0c-43.21 0-80.64 37.72-103.34 55.86-2.53 2.01-6.1 4.87-10.2 8.14H96c-17.67 0-32 14.33-32 32v30.98c-24.52 19.71-44.75 36.01-46.48 37.43A48.002 48.002 0 0 0 0 201.48V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.51c0-14.31-6.38-27.88-17.41-36.99zM256 32c21.77 0 44.64 16.72 63.14 32H192.9c18.53-15.27 41.42-32 63.1-32zM96 96h320v173.35c-32.33 26-65.3 52.44-86.59 69.34-16.85 13.43-50.19 45.68-73.41 45.31-23.21.38-56.56-31.88-73.41-45.32-21.29-16.9-54.24-43.33-86.59-69.34V96zM32 201.48c0-4.8 2.13-9.31 5.84-12.36 1.24-1.02 11.62-9.38 26.16-21.08v75.55c-11.53-9.28-22.51-18.13-32-25.78v-16.33zM480 464c0 8.82-7.18 16-16 16H48c-8.82 0-16-7.18-16-16V258.91c42.75 34.44 99.31 79.92 130.68 104.82 20.49 16.36 56.74 52.53 93.32 52.26 36.45.26 72.27-35.46 93.31-52.26C380.72 338.8 437.24 293.34 480 258.9V464zm0-246.19c-9.62 7.75-20.27 16.34-32 25.79v-75.54c14.44 11.62 24.8 19.97 26.2 21.12 3.69 3.05 5.8 7.54 5.8 12.33v16.3z"></path></svg>
+
+    <div class="form-spinner">
+      <div class="spinner">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+    </div>
+
+    <div class="form-message is-success">
+      Viestisi on lähetetty! Olemme sinuun yhteydessä pian.
+    </div>
+
+    <div class="form-message is-error">
+      Viestiä ei voitu lähettää. Ole hyvä ja yritä myöhemmin uudelleen.
+    </div>
+  </div>
+</div>
+</form>
+</div>
+
+<footer class="stepper-footer">
+<div class="stepper-error">
+<span>Tarkista merkityt kentät (*)</span>
+</div>
+<div class="stepper-actions">
+<button class="button is-outlined stepper-prev" data-stepper-prev="">Edellinen</button>
+<button class="button stepper-next" data-stepper-next="">Seuraava</button>
+<button class="button stepper-submit" data-stepper-submit="">Lähetä</button>
+</div>
+</footer>
+</div>
+</body>
+</html>
